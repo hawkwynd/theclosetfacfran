@@ -1,4 +1,26 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# Brand Journalists Theme for The Closet Factory Franchise website
+
+## Notes
+* Mobile responsive theme tested iPad, iPhone
+* Gravity Forms sass
+* Flex styling for better responsive display
+
+## Plugins used:
+
+* LayerSlider
+* advanced-tables
+* fitvids-for-wordpress
+* duracelltomi-google-tag-manage
+* gravityforms
+* related-posts
+* simple-social-icons
+* wp-paginate
+* wordpress-seo
+
+
+## Additional Code
+
+* [HTML5 Boilerplate](http://html5boilerplate.com)
 
 HTML5 Boilerplate is a professional front-end template that helps you build fast, robust, adaptable, and future-proof websites. Spend more time developing and less time reinventing the wheel.
 
@@ -40,16 +62,3 @@ Anyone and everyone is welcome to [contribute](https://github.com/h5bp/html5-boi
 * Web: http://html5boilerplate.com
 * Docs: http://html5boilerplate.com/docs
 * Twitter: http://twitter.com/h5bp
-
-
-## License
-
-### Major components:
-
-* jQuery: MIT/GPL license
-* Modernizr: MIT/BSD license
-* Normalize.css: Public Domain
-
-### Everything else:
-
-The Unlicense (aka: public domain)
