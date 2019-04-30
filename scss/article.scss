@@ -1,0 +1,241 @@
+
+
+/* ARTICLE */
+
+article {
+  h2, h3, h4, h5 {
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+    font-size: 16px;
+
+    @include phone{
+      line-height: 20px;
+      margin: 20px 0;
+    }
+  }
+}
+
+section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+article {
+  ul, ol {
+    margin: 20px 0 20px 60px;
+
+    @include phone{ margin: 0;}
+
+  }
+  ul {
+    list-style: disc;
+  }
+  ol {
+    list-style: decimal;
+  }
+  li {
+    list-style-position: inside;
+
+    @include phone{margin: 10px 10px;}
+    @include tablet{margin: 10px 10px;}
+
+  }
+  img {
+    margin-bottom: 20px;
+  }
+}
+
+.post ul.related_post li a {
+  display: block !important;
+  font-size: 13px !important;
+  line-height: 1.6em !important;
+  margin-bottom: 5px !important;
+  position: relative !important;
+  text-decoration: none !important;
+  text-indent: 0 !important;
+  color: #a9a9a9;
+  &:hover {
+    color: #333;
+  }
+}
+
+div#comments {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  div#respond form {
+    background: #eff6f9;
+    padding: 20px;
+    p {
+      font-style: italic;
+      margin-bottom: 15px;
+      font-size: 14px;
+      span {
+        color: red;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        span {
+          display: inline;
+          color: red;
+        }
+      }
+      input[type="text"], textarea {
+        display: block;
+        box-shadow: none;
+        background: white;
+        border: 1px solid #cfcfcf;
+        padding: 10px 10px;
+        height: auto;
+        width: 100%;
+        -webkit-transition: all ease 0.3s;
+        -o-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        -ms-transition: all ease 0.3s;
+        transition: all ease 0.3s;
+        font-weight: 300;
+      }
+      input[type="text"]:focus, textarea:focus, input[type="text"]:hover {
+        background: #ffffec;
+      }
+      textarea {
+        &:hover {
+          background: #ffffec;
+        }
+        height: 100px;
+        line-height: 24px;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &.form-allowed-tags {
+        display: none;
+      }
+      &.comment-form-comment {
+        margin-bottom: 0;
+      }
+    }
+    input#submit {
+      margin-top: 20px;
+      width: 200px;
+    }
+  }
+  h2 {
+    margin-bottom: 25px;
+    margin-top: 0;
+    font-size: 30px;
+    color: #008653;
+  }
+  ol {
+    margin: 0;
+    list-style: none;
+    li {
+      padding: 20px;
+      list-style: none;
+      margin-bottom: 0px;
+      &:nth-child(even) {
+        background: #eff6f9;
+      }
+      article {
+        float: none;
+        box-shadow: none;
+        background: none;
+        padding: 0;
+        margin-bottom: 0;
+        width: 100%;
+        img {
+          float: left;
+          width: 10%;
+          height: auto;
+          padding: 0;
+          box-shadow: none;
+          margin-bottom: 20px;
+        }
+        p {
+          clear: both;
+          margin-bottom: 10px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+        h4 {
+          float: right;
+          font-size: 17px;
+          margin-top: 9px;
+          width: 88%;
+          margin-bottom: 0;
+          color: #008653;
+          a {
+            text-decoration: none;
+          }
+        }
+        time {
+          float: right;
+          width: 88%;
+          a {
+            font-size: 13px;
+            text-decoration: none;
+            font-style: italic;
+            color: #515151;
+          }
+        }
+      }
+    }
+  }
+}
+
+.alignleft {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0px 20px 20px;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+blockquote {
+  margin: 30px;
+  background: rgba(0, 0, 0, 0.02);
+  padding: 26px;
+  font-style: italic;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  p {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    &:last-of-type {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+div.wp-caption {
+  background: rgba(0, 0, 0, 0.02);
+  padding: 6px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  a {
+    margin-bottom: 6px;
+    display: block;
+    text-align: center;
+  }
+  p {
+    font-size: 12px !important;
+    font-style: italic;
+    line-height: 18px !important;
+    text-align: center;
+    &:last-of-type {
+      margin-bottom: 0 !important;
+    }
+  }
+}

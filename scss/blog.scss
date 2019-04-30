@@ -1,0 +1,33 @@
+
+/* Blog listings/ category styles */
+
+.blog-big.group{
+  margin-bottom: 60px;
+}
+
+
+.blog-big, .blog-small{
+  .blog-image{
+   float: left;
+    padding: 0 20px 0 0;
+
+    @include phone{
+      float: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .blog-content{
+    margin-left: 220px;
+    @include phone{
+      margin-left: 0;
+    }
+
+    .blog-listing-socials{
+      height: 8px;
+    }
+  }
+
+}

@@ -1,0 +1,110 @@
+
+/* RESPONSIVE */
+@media screen and (max-width: 980px) {
+
+  .ls-wrapper span{
+    height: 24px !important;
+  }
+
+  .content {
+    width: 65%;
+  }
+  aside {
+    width: 32%;
+  }
+  .blog-small {
+    width: 100%;
+    float: none;
+    &:nth-of-type(odd) {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #555;
+      margin-bottom: 30px;
+    }
+  }
+  div#comments {
+    margin-bottom: 30px;
+    div#respond h3 {
+      margin-bottom: 25px;
+    }
+    ol li article h4 {
+      margin-top: 0px;
+    }
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@include tablet {
+
+  .content {
+    width: 95%;
+    float: none;
+    margin: 0 20px;
+  }
+
+  aside {
+    width: 95%;
+    float: none;
+    margin: 0 20px;
+  }
+
+  .reasons-container{
+    width: 100%;
+    margin: 0;
+  }
+
+   .type1{
+    width: 100px !important;
+    height: 100px !important;
+    img{
+      height: 30px !important;
+      margin: 35px 0 !important;
+    }
+  }
+
+  .video-container{
+    margin: 30px 10px !important;
+    .video-image-container{
+      width: auto !important;
+      height: auto !important;
+    }
+  }
+
+
+}
+
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@include phone {
+
+  .content {
+    width: 100%;
+    float: none;
+  }
+  aside {
+    width: 100%;
+    float: none;
+    margin-top: 50px;
+    clear: both;
+  }
+  div#comments ol li article {
+    h4 {
+      a {
+        font-size: 18px;
+      }
+      font-size: 18px;
+      line-height: 18px;
+      margin-top: 8px;
+    }
+    time {
+      display: none;
+    }
+  }
+}

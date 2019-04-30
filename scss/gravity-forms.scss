@@ -1,0 +1,211 @@
+
+/*
+  GRAVITY FORMS STYLES
+*/
+
+.gform_wrapper {
+  form {
+    padding-bottom: 20px;
+    font-weight: normal;
+  }
+
+  .gform_heading{
+
+    padding: 20px;
+    margin-bottom: 0;
+
+    .gform_title{
+      font-size: 26px;
+      line-height: 30px;
+    }
+  }
+
+  .gform_body {
+    padding: 20px 30px 0 30px;
+
+    @include phone{
+      padding: 10px 0 0 0;
+    }
+  }
+
+  .gfield_required {
+    color: #790000;
+  }
+
+  input[type="checkbox"], input[type='radio'] {
+    height: 20px;
+  }
+
+  select {
+    background: #F0F3FB;
+    border: 1px solid #F0F3FB;
+    border-radius: 4px;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    color: #3F3F3F;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+  }
+
+  // style the select with a icon
+  .address_country, .ginput_container_select{
+    position: relative;
+  }
+  .address_country:after, .ginput_container_select:after{
+    font-family: FontAwesome;
+    content: '\f107';
+    font-size: 28px;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    color: #434B67;
+    pointer-events: none;
+  }
+  .ginput_container_select:after{
+    position: relative;
+    top: 6px;
+    right: 40px;
+
+    @include phone{
+      position: absolute;
+      top: 8px;
+      right:20px;
+    }
+  }
+
+
+  @include phone{
+    input, textarea{
+      border: 2px inset #d5d5d599;
+    }
+
+    select{
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: black;
+      //text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+      -webkit-appearance: none;
+      padding: 5px;
+    }
+
+  // align the radio buttons horizontally
+  li.gf_list_inline ul.gfield_radio li{
+      display: inline-block;
+      margin: 0 28px 10px 0 !important;
+      display: -moz-inline-stack;
+    }
+  }
+
+  @include tablet{
+    input{
+      border: 2px inset #d5d5d599;
+    }
+
+    select{
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: black;
+      //text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+      -webkit-appearance: none;
+      padding: 5px;
+    }
+
+    // align the radio buttons horizontally
+    li.gf_list_inline ul.gfield_radio li{
+      display: inline-block;
+      margin: 0 28px 10px 0 !important;
+      display: -moz-inline-stack;
+    }
+  }
+
+
+
+}
+
+.gform_widget {
+  .widget-title {
+    margin: 0;
+    text-align: center;
+    background-color: #527082;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 22px;
+    font-family: "Helvetica-Bold";
+    letter-spacing: 4px;
+
+    @include phone{
+      letter-spacing: 1px;
+      padding: 10px 20px;
+    }
+
+  }
+  .gform_wrapper {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.gform_wrapper span.gform_description {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.gform_widget .gform_wrapper {
+  .gfield {
+    width: 100% !important;
+    clear: both !important;
+    float: none !important;
+  }
+  .gfield_label {
+    font-size: 14px !important;
+    line-height: 16px !important;
+    padding: 0 !important;
+    text-transform: uppercase;
+    font-weight: normal !important;
+  }
+  .validation_error {
+    color: #527082;
+  }
+  .gfield_error {
+    background-color: #527082 !important;
+    border: 0 !important;
+    .gfield_label {
+      color: #fff;
+      margin: 12px 0 0 10px;
+    }
+  }
+  .validation_message, li.gfield_error div.ginput_complex.ginput_container label {
+    //color: #ff0c00;
+    margin: 0 0 0 10px;
+  }
+  textarea {
+
+    height: 90px;
+    border: 2px inset;
+  }
+  .ginput_complex.ginput_container.has_first_name.has_last_name span {
+    width: 100%;
+  }
+}
+
+.gform_wrapper .ginput_complex.ginput_container {
+  &.has_first_name {
+    &.has_middle_name.no_last_name span, &.no_middle_name.has_last_name span {
+      width: 100%;
+    }
+  }
+  &.no_first_name.has_middle_name.has_last_name span {
+    width: 100%;
+  }
+}
+
+aside div.ginput_container_name span {
+  padding-right: 0;
+}

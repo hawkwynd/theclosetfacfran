@@ -1,0 +1,770 @@
+/*
+ -------- Style Overrides  --------
+*/
+
+.widget-container ul li{
+  margin: 10px 0;
+@include phone{margin:0;}
+}
+
+
+.fa-angle-right, .fa-angle-left {
+  font-size: 18px !important;
+  color: #fff;
+}
+
+.fa-angle-right {
+  margin-left: 8px;
+}
+
+.fa-angle-left {
+  margin-right: 8px;
+}
+
+header {
+  box-shadow: none !important;
+}
+
+/*
+--------- Main Nav Override ---------
+*/
+
+nav a {
+  color: #465057 !important;
+}
+
+img.ls-bg {
+  opacity: 0.25;
+}
+
+#layerslider_1 {
+  padding: 0;
+  box-shadow: none;
+  clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+}
+
+/*
+-------- Page override -----
+*/
+
+section {
+  .page-wrapper {
+    max-width: 1440px;
+    margin: 0 auto 70px;
+  }
+  &#cost-section {
+    padding-top: 100px;
+    background: url(/wp-content/themes/brandjo/img/cost-background.png) top center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    @include phone{
+      padding-top: 40px;
+      margin: 0 30px;
+    }
+
+  }
+}
+
+.section-wrapper {
+  max-width: 100%;
+  padding-bottom: 100px;
+
+  @include phone{padding-bottom: 0;}
+
+  #talk_banner {
+    padding-bottom: 0 !important;
+  }
+}
+
+.franchise-info {
+  .round-wrap {
+    border: none;
+    border-radius: 0;
+    padding: 12px 0;
+  }
+  h2 {
+    font-size: 18px;
+    font-family: "Helvetica-Bold";
+    text-align: center;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #527082;
+    line-height: 42px;
+    letter-spacing: 3px;
+
+    @include phone{
+      letter-spacing: 1px;
+    }
+
+  }
+  h3 {
+    font-family: 'Helvetica-Bold';
+    border: 2px solid #527082;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 4px;
+    padding: 6px;
+
+    @include phone{letter-spacing: 0;}
+
+    a {
+      color: #527082;
+      text-decoration: none;
+      &:hover{
+        color: #294152;
+      }
+    }
+  }
+}
+
+i.fa.fa-phone {
+  color: #527082;
+  font-size: 20px;
+  padding-right: 9px;
+}
+
+/* ------- side-menu ------*/
+
+.side-menu {
+  ul li {
+    &.current-cat a {
+      background: #ecf2f5;
+      color: #527082;
+      &:hover{color: #527082;}
+    }
+    a:hover{
+      color: #a7a3a3;
+    }
+  }
+  .widget-title {
+    background-color: #527082;
+    color: #fff;
+    font-family: 'Helvetica-Bold';
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+/*
+ Special handler just for the custom side form on main page
+*/
+
+.request-information-form {
+  color: #527082;
+  background-color: #ecf2f5;
+  padding: 0;
+  .gform_widget {
+    color: #527082;
+    background-color: #ecf2f5;
+    padding: 0;
+  }
+  .widget-title, .gform_widget .widget-title {
+    font-family: 'Helvetica-Bold';
+    font-size: 22px;
+    color: white;
+    background-color: #527082;
+    text-transform: uppercase;
+    padding: 20px;
+  }
+}
+
+
+
+.gform_wrapper .gform_footer {
+  padding: 0 0 27px 0 !important;
+  margin: 30px 0 0 30px !important;
+
+  @include phone{
+
+    margin: 20px auto !important;
+    width: 80% !important;
+    padding: 0 !important;
+  }
+
+}
+
+#gform_submit_button_3 {
+  font-size: 16px !important;
+  letter-spacing: 3px;
+  padding: 10px;
+  box-shadow: 2px 5px 2px 0px #52708257;
+
+}
+
+aside .button {
+  background-color: #527082 !important;
+  font-weight: 300;
+}
+
+.time{
+  color: #527082;
+}
+
+h2.home-h2 {
+  font-family: "Helvetica-Bold";
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #527082;
+  letter-spacing: 1px;
+
+  @include phone{
+    letter-spacing: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  a {
+    color: #527082;
+    text-decoration: none;
+  }
+}
+
+p.home-subline {
+  font-family: "Helvetica";
+  font-size: 24px;
+  color: #a7a3a3;
+}
+
+.content .post {
+  margin-top: 50px;
+  @include tablet{ margin-top: 30px;}
+  @include phone{ margin: 40px 0;}
+
+}
+
+article p {
+  font-weight: 400;
+}
+
+.learn_more_link {
+  padding: 8px 15px;
+  background-color: #527082;
+  width: fit-content;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a:hover{
+    color: #9c9c9c;
+  }
+}
+
+.group-container .learn_more_link {
+  margin: auto;
+}
+
+.reasons-container {
+  background-image: url(/wp-content/uploads/2019/03/CF-Reasons-BG-Img.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 40px;
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 86%);
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 86%);
+
+  @include tablet{
+    padding: 150px 40px;
+    -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 86%);
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 90%);
+  }
+
+  @include phone{
+    -webkit-clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 98%);
+    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 98%);
+    padding: 100px 30px;
+  }
+
+}
+
+.content-container-centered {
+  text-align: center;
+  h2 {
+    font-family: "Helvetica-Bold";
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #527082;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 16px;
+    letter-spacing: 3px;
+  }
+}
+
+/* --- col container flex columns --*/
+
+.col-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  @include tablet{
+    flex-direction: column;
+  }
+  @include phone{
+    flex-direction: column;
+  }
+
+  margin-top: 40px;
+
+  .group-container {
+    width: 32%;
+    margin: 0 15px;
+    text-align: center;
+
+    @include tablet{
+      width: 100%;
+      margin: 30px 15px;
+
+    }
+    @include phone{
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    p {
+      font-family: "Helvetica";
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+  .circleBase {
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    /* remove if you don't care about IE8 */
+  }
+  .type1 {
+    width: 150px;
+    height: 150px;
+    background-color: #527082;
+    margin: 25px auto;
+    img {
+      height: 50px;
+      margin: 50px 0;
+    }
+  }
+}
+
+/* --------- video container --------*/
+
+.video-container {
+  margin: 30px 15%;
+  @include phone{margin: 0;}
+}
+
+.talk-banner {
+  font-family: "Helvetica-Bold";
+  font-size: 24px;
+  text-align: center;
+  background-color: #527082;
+  padding: 30px 0;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  margin: 100px 0 0 0;
+
+  @media screen and (max-width: 780px) and (max-width: 1024px) {
+    word-spacing: 0;
+    letter-spacing: 0;
+  }
+  @media screen and (max-width: 780px) and (max-width: 1024px) {
+   h2{
+       font-size: 16px;
+       span{
+         padding: 8px 6px;
+       }
+   }
+  }
+
+  span {
+    border: 2px solid #8cb9d4;
+    padding: 1px 10px;
+    margin: 0 14px;
+    a {
+      color: #8cb9d4;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    @include phone{
+      display:block;
+      margin: 10px 14px;
+    }
+
+  }
+}
+
+.research-talk-banner h2 {
+  font-family: "Helvetica-Bold";
+  font-size: 24px;
+  text-align: center;
+  background-color: #8cb9d4;
+  padding: 30px 0;
+  color: #527082;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+
+  @include tablet{
+    letter-spacing: 0;
+    word-spacing: 0;
+    font-size: 18px;
+  }
+
+  @include phone{
+    letter-spacing: 0;
+    word-spacing: 0;
+    font-size: 18px;
+  }
+
+  span {
+    border: 1px solid #527082;
+    padding: 4px;
+    margin: 0 14px;
+
+    @include phone{
+      display: block;
+      margin: 10px 34px;
+    }
+
+    a {
+      color: #527082;
+      text-decoration: none;
+    }
+    a:hover{
+      color: #fff;
+    }
+  }
+}
+
+
+
+/*---- Split a div in half side/side ---*/
+
+
+.dual-wrapper {
+}
+
+.left-block {
+  display: inline-block;
+  width: 45%;
+  margin-left:60px;
+
+  @media screen and (max-width: 780px) and (max-width: 1024px) {
+    margin: 0 20px;
+    width: 55%;
+  }
+
+  @include phone{
+    width: 100%;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: "Helvetica-Bold";
+    text-transform: uppercase;
+    color: #527082;
+    font-size: 24px;
+    margin-bottom: 16px;
+    line-height: 32px;
+    letter-spacing: 4px;
+
+    @include phone{letter-spacing: 2px;}
+
+  }
+  ul {
+    padding: 0 1em;
+    list-style: none;
+  }
+  li:before {
+    content: "";
+    border-color: transparent #475c6d;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+  }
+}
+
+
+.right-block {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50px;
+
+  @media screen and (max-width: 780px) and (max-width: 1024px) {
+    margin: 0 10px;
+    width: 35%;
+  }
+
+  @include phone{display: none;}
+}
+
+// request form info page form
+section#req-form-info {
+  display: block;
+  width: 100%;
+  background: #6c899a url(../img/franchise-information-report.png) no-repeat scroll 92% (120px / auto) 63%;
+  padding: 40px 30px;
+  color: #fff;
+
+  h3.gform_title {
+    font-size: 24px;
+    font-family: "Helvetica-Bold";
+    line-height: 42px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  span.gform_description {
+    text-align: left;
+  }
+  .darkform form {
+    background-color: #6c899a;
+    .gform_heading {
+      h3.gform_title, .gform_description {
+        padding: 0 30px 0 30px;
+        color: #fff;
+      }
+      h3.gform_title {
+        letter-spacing: 5px !important;
+        font-family: "Helvetica-Bold";
+        line-height: 42px;
+      }
+      margin-bottom: 0;
+    }
+    .gform_body, .gform_footer {
+      padding: 0 30px 0 30px;
+    }
+  }
+  .gform_wrapper .gform_button {
+    background-color: #8cb9d4;
+    border: medium none;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+
+
+section {
+  #franchisee-quotes ul li {
+    width: 48%;
+    padding: 20px;
+    background-color: #6c899a;
+    margin-bottom: 20px;
+  }
+
+
+  &#req-form{
+
+    @include tablet{
+      display: none;
+    }
+    @include phone{
+      display: none;
+      background: #6c899a;
+      padding: 0;
+    }
+
+    display: block;
+    width: 100%;
+    background: #6c899a url(../img/franchise-information-report.png) no-repeat scroll 92% (120px / auto) 63%;
+    padding: 40px 30px;
+    color: #fff;
+
+    h3.gform_title {
+      font-size: 24px;
+      font-family: "Helvetica-Bold";
+      line-height: 42px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+
+      @include phone{
+        font-size: 24px;
+        line-height: 28px;
+
+      }
+
+    }
+    span.gform_description {
+      text-align: left;
+    }
+    .darkform form {
+      background-color: #6c899a;
+      .gform_heading {
+        h3.gform_title, .gform_description {
+          padding: 0 30px 0 30px;
+          color: #fff;
+        }
+        h3.gform_title {
+          letter-spacing: 5px !important;
+          font-family: "Helvetica-Bold";
+          line-height: 42px;
+        }
+        margin-bottom: 0;
+      }
+      .gform_body, .gform_footer {
+        padding: 0 30px 0 30px;
+      }
+    }
+    .gform_wrapper .gform_button {
+      background-color: #8cb9d4;
+      border: medium none;
+      color: #fff;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 18px;
+      padding: 12px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  &#featured-posts {
+    padding: 80px 40px;
+
+    @include tablet{
+      padding: 40px;
+    }
+
+    @include phone{
+      padding: 0;
+      margin: 60px 30px;
+    }
+
+    text-align: center;
+    background-color: #f5f5f5;
+    h2 {
+      color: #475c6d;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      word-spacing: 4px;
+      letter-spacing: 3px;
+
+      @include phone{letter-spacing: 1px; word-spacing: 0px;}
+
+    }
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      li {
+        width: 28%;
+        padding: 20px;
+      }
+    }
+    .featured-title {
+      font-size: 18px;
+      a {
+        font-family: "Helvetica-Bold";
+        display: block;
+        color: #525252;
+        margin: 20px 0;
+        text-decoration: none;
+        &:hover {
+          color: #a9a9a9;
+        }
+      }
+    }
+    img {
+      max-width: 100%;
+      height: 250px !important;
+
+      @include tablet{
+        //height: 125px !important;;
+      }
+
+      @include phone{
+        height: auto !important;
+      }
+
+    }
+  }
+}
+
+/* -------- form overrides ----*/
+
+/* FOOTER BLOG */
+
+/* ---------- Header Nav Research ----------*/
+
+.header-nav.research {
+  background: #fff url(../img/Jeanne-Hessen_Dressing-Room.jpg) no-repeat scroll (center / cover);
+  margin-bottom: 40px;
+  opacity: 0.5;
+  height: 300px;
+
+  @include phone{
+    margin-top: 20px;
+    height:200px;
+  }
+}
+
+/* RESEARCH FUNNEL */
+
+.bottom-nav {
+  text-align: right;
+  padding-bottom: 40px;
+
+  @include phone{
+    padding: 0;
+  .next-step{
+    margin: 0 30px 0 0;
+  }
+
+  }
+
+  div {
+    display: inline-block;
+    padding: 8px 30px;
+    background-color: #527082;
+    width: fit-content;
+  }
+  a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    &:hover {
+      color: #525252;
+      cursor: pointer;
+    }
+    &:nth-child(2) {
+      /* border-left: 1px solid #a9a9a9;
+      padding-left: 20px;
+      */
+    }
+  }
+}
+
+.previous-step, next-step {
+  margin: 0 20px;
+}
